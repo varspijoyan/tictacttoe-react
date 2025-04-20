@@ -11,13 +11,13 @@ export default function Board() {
   useEffect(() => {
     const checkForAWinner = (player) => {
         if((boards[0] === player && boards[1] === player && boards[2] === player) ||
-        (boards[3] === player && boards[4] === player && boards[5] === player) ||
-        (boards[6] === player && boards[7] === player && boards[8] === player) || 
-        (boards[0] === player && boards[3] === player && boards[6] === player) || 
-        (boards[1] === player && boards[4] === player && boards[7] === player) || 
-        (boards[2] === player && boards[5] === player && boards[8] === player) ||
-        (boards[0] === player && boards[4] === player && boards[8] === player) ||
-        (boards[2] === player && boards[4] === player && boards[6] === player)) {
+            (boards[3] === player && boards[4] === player && boards[5] === player) ||
+            (boards[6] === player && boards[7] === player && boards[8] === player) || 
+            (boards[0] === player && boards[3] === player && boards[6] === player) || 
+            (boards[1] === player && boards[4] === player && boards[7] === player) || 
+            (boards[2] === player && boards[5] === player && boards[8] === player) ||
+            (boards[0] === player && boards[4] === player && boards[8] === player) ||
+            (boards[2] === player && boards[4] === player && boards[6] === player)) {
             return true;
         } else {
             return false;
