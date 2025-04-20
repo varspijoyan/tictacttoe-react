@@ -37,8 +37,8 @@ export default function Board() {
             if(boards[i] === null) {
                 return false;
             }
-         }
-         return true;
+        }
+        return true;
     } 
 
     if(!winner && checkForTieGame()) {
